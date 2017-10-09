@@ -1,87 +1,83 @@
 
 public class Jets {
-	    
-	    String model;
-	    double speed;
-	    double range;
-	    String repair;
-	    double price;
-		
-	    public Jets(String model, double speed, double range, String repair, double price) {
-			super();
-			this.model = model;
-			this.speed = speed;
-			this.range = range;
-			this.repair = repair;
-			this.price = price;
-		}
 
-	    public Jets(){
-	    	super();
-	    }
+	String model;
+	double speed;
+	double range;
+	String condition;
+	double price;
 
-		public String getModel() {
-			return model;
-		}
+	public Jets() {
+	}
 
-		public void setModel(String model) {
-			this.model = model;
-		}
+	public Jets(String model, double speed, double range, String condition, double price) {
+		this.model = model;
+		this.speed = speed;
+		this.range = range;
+		this.condition = condition;
+		this.price = price;
+	}
 
-		public double getSpeed() {
-			return speed;
-		}
+	public String getModel() {
+		return model;
+	}
 
-		public void setSpeed(double speed) {
-			this.speed = speed;
-		}
+	public void setModel(String model) {
+		this.model = model;
+	}
 
-		public double getRange() {
-			return range;
-		}
+	public double getSpeed() {
+		return speed;
+	}
 
-		public void setRange(double range) {
-			this.range = range;
-		}
+	public void setSpeed(double speed) {
+		this.speed = speed;
+	}
 
-		public String getRepair() {
-			return repair;
-		}
+	public double getRange() {
+		return range;
+	}
 
-		public void setRepair(String repair) {
-			this.repair = repair;
-		}
+	public void setRange(double range) {
+		this.range = range;
+	}
 
-		public double getPrice() {
-			return price;
-		}
+	public String getCondition() {
+		return condition;
+	}
 
-		public void setCapacity(double price) {
-			this.price = price;
-		}
+	public void setRepair(String condition) {
+		this.condition = condition;
+	}
 
-		@Override
-		public String toString() {
-			StringBuilder builder = new StringBuilder();
-			builder.append("Jets [model=");
-			builder.append(model);
-			builder.append(", speed in Mach=");
-			builder.append(speed);
-			builder.append(", range=");
-			builder.append(range);
-			builder.append(", repair=");
-			builder.append(repair);
-			builder.append(", price=");
-			builder.append(price);
-			builder.append("]");
-			return builder.toString();
-		}
-	    public double MilestoMach(double miles) {
-	    	this.speed = miles*0.00131;
-	    	return speed;
-	    }
-	    		
-	    		
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Jets [model=");
+		builder.append(model);
+		builder.append(", speed in Mach=");
+		builder.append(speed);
+		builder.append(", range=");
+		builder.append(range);
+		builder.append(", condition=");
+		builder.append(condition);
+		builder.append(", price in millions USD=");
+		builder.append(price);
+		builder.append("]");
+		return builder.toString();
+	}
+
+	public double MilestoMach(double miles) {
+		this.speed = miles * 0.00131;
+		return speed;
+	}
+
 }
-
-
