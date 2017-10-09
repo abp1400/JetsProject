@@ -6,9 +6,9 @@ public class Airport {
 	public Airport() {
 		jets = new Jets[7];
 		jets[0] = new Jets("Boeing", 0.85, 9800, "new", 300);
-		jets[1] = new Jets("Airbus", 0.90, 8900, "new", 311);
+		jets[1] = new Jets("Airbus", 0.88, 10000, "new", 311);
 		jets[2] = new Jets("Bombadier", 0.78, 3800, "good", 85);
-		jets[3] = new Jets("Embraer", 0.80, 3000, "needs repair", 60);
+		jets[3] = new Jets("Embraer", 0.6, 3000, "needs repair", 60);
 		jets[4] = new Jets("Gulfstream", 0.75, 5000, "non-functional", 65);
 	}
 
